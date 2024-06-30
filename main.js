@@ -1,3 +1,3 @@
 document.getElementById('myButton').addEventListener('click', function() {
-    alert('Botão clicado!');
+    alert('Oi bibi, tudo bem?');
 });
