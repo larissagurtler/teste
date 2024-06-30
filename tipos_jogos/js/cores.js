@@ -1,6 +1,18 @@
 // cores.js
 
-const cores = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'black', 'white'];
+const cores = [
+    { portugues: 'vermelho', ingles: 'red' },
+    { portugues: 'azul', ingles: 'blue' },
+    { portugues: 'verde', ingles: 'green' },
+    { portugues: 'amarelo', ingles: 'yellow' },
+    { portugues: 'roxo', ingles: 'purple' },
+    { portugues: 'laranja', ingles: 'orange' },
+    { portugues: 'rosa', ingles: 'pink' },
+    { portugues: 'marrom', ingles: 'brown' },
+    { portugues: 'preto', ingles: 'black' },
+    { portugues: 'branco', ingles: 'white' }
+];
+
 let indiceCorAtual = 0;
 let pontos = 0;
 
@@ -11,7 +23,7 @@ function iniciarJogo() {
 function exibirProximaCor() {
     if (indiceCorAtual < 10) {
         const corAtual = cores[indiceCorAtual];
-        const resposta = prompt(`Qual é a cor em inglês?\nExemplo: Red, Blue, Green, etc.`);
+        const resposta = prompt(`Qual é a cor em inglês correspondente a "${corAtual.portugues}"?`);
         
         // Verifica se o usuário clicou em "Cancelar" ou fechou o prompt
         if (resposta === null) {
@@ -20,11 +32,11 @@ function exibirProximaCor() {
             return; // Encerra a função
         }
         
-        if (resposta.toLowerCase() === corAtual) {
+        if (resposta.toLowerCase() === corAtual.ingles) {
             pontos++;
             alert(`Correto! Pontuação: ${pontos}`);
         } else {
-            alert(`Incorreto! A resposta correta era: ${corAtual}`);
+            alert(`Incorreto! A resposta correta era: ${corAtual.ingles}`);
         }
         
         indiceCorAtual++;
