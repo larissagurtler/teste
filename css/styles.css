@@ -3,17 +3,18 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Cor de fundo */
 }
 
 h1 {
-    background-color: #4CAF50;
+    background-color: #0284c7; /* Cor principal para cabeçalhos */
     color: white;
     padding: 20px;
+    margin-top: 0;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #0284c7; /* Cor dos botões */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -26,24 +27,21 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
+    background-color: #0369a1; /* Cor dos botões ao passar o mouse */
 }
 
 a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #0ea5e9; /* Cor dos links */
     font-size: 18px;
 }
 
 a:hover {
-    color: #45a049;
+    color: #075985; /* Cor dos links ao passar o mouse */
+}
+
+ul, ol {
+    list-style-type: none; /* Remove os marcadores/bolinhas padrão */
+    padding: 0; /* Remove o espaçamento interno padrão */
+    margin: 0; /* Remove o espaçamento externo padrão */
 }
