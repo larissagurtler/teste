@@ -1,3 +1,5 @@
+/* cores.css */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,11 +8,16 @@ body {
     background-color: #f0f0f0; /* Cor de fundo */
 }
 
-h1 {
-    background-color: #0284c7; /* Cor principal para cabeçalhos */
+header {
+    background-color: #0284c7; /* Cor de fundo para cabeçalho */
     color: white;
     padding: 20px;
-    margin-top: 0;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
 }
 
 button {
@@ -28,22 +35,6 @@ button {
 
 button:hover {
     background-color: #0369a1; /* Cor dos botões ao passar o mouse */
-}
-
-a {
-    text-decoration: none;
-    color: #0ea5e9; /* Cor dos links */
-    font-size: 18px;
-}
-
-a:hover {
-    color: #075985; /* Cor dos links ao passar o mouse */
-}
-
-ul, ol {
-    list-style-type: none; /* Remove os marcadores/bolinhas padrão */
-    padding: 0; /* Remove o espaçamento interno padrão */
-    margin: 0; /* Remove o espaçamento externo padrão */
 }
 
 footer {
